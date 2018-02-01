@@ -49,6 +49,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+//Reroutes foxtrots link
+$route['foxtrot'] = 'tango';
+//Reroutes any segment with i to golf
+$route['i/.*'] = 'golf';
+//For kilo, simply remaps so you don't need to type in welcome in the URI
+$route['show/(:any)'] = 'welcome/show/$1';
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['bananas/rule'] = function() {
+  return 'golf';
+};
+
