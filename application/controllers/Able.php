@@ -10,7 +10,7 @@ class Able extends Application
 	}
 
 	/**
-	 * Homepage for our app
+	 * default function for alpha
 	 */
 	public function index() {
         $this->show(1);
