@@ -51,6 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 //Reroutes foxtrots link
 $route['foxtrot'] = 'tango';
+//Reroutes any segment with i to golf
+$route['i/.*'] = 'golf';
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
